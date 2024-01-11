@@ -1,0 +1,30 @@
+.count {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.count-btn {
+  padding: 20px 30px;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: inherit;
+  border: 1px solid #0cafff;
+  transition: all 0.3s;
+  color: #3457d5;
+  border-radius: 10px;
+}
+
+.count-btn:hover {
+  background-color: #0cafff;
+  color: #fff;
+}
+
+.count-text {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
