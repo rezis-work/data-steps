@@ -38,3 +38,9 @@
   outline: none;
   border-radius: 20px;
 }
+
+@media (max-width: 500px) {
+  .count-input {
+    width: 100px;
+  }
+}
