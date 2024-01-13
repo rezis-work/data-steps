@@ -28,3 +28,13 @@
   font-weight: bold;
   color: #fff;
 }
+
+.count-input {
+  padding: 20px;
+  background-color: #0cafff;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}

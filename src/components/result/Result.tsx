@@ -14,6 +14,7 @@ export default function Result({ count }: ResultPropsTypes): JSX.Element {
   return (
     <div className="results">
       <p>
+        {count === 0 && "Today "}
         {count >= 0
           ? `${count} days from Today is ${weekday} ${month} ${day} ${year}`
           : `${count} days before Today is ${weekday} ${month} ${day} ${year}`}

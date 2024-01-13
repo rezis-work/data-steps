@@ -6,22 +6,21 @@ interface StepsProspType {
 }
 
 export default function Steps({ step, setStep }: StepsProspType): JSX.Element {
-  function handleStepBack() {
-    setStep((s) => s - 1);
-  }
-
-  function handleStepForward() {
-    setStep((s) => s + 1);
+  function handleSteps(e: React.ChangeEvent<HTMLInputElement>) {
+    setStep(+e.target.value);
   }
   return (
     <div className="step">
-      <button onClick={handleStepBack} className="step-btn">
-        -
-      </button>
-      <span className="step-text">Step: {step}</span>
-      <button onClick={handleStepForward} className="step-btn">
-        +
-      </button>
+      <span className="step-text">
+        <input
+          onChange={handleSteps}
+          type="range"
+          min="0"
+          max="10"
+          value={step}
+        />{" "}
+        {step}
+      </span>
     </div>
   );
 }

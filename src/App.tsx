@@ -5,7 +5,7 @@ import Count from "./components/count/Count";
 import Result from "./components/result/Result";
 
 function App(): JSX.Element {
-  const [step, setStep] = useState<number>(0);
+  const [step, setStep] = useState<number>(1);
   const [count, setCount] = useState<number>(0);
   return (
     <div className="App">
